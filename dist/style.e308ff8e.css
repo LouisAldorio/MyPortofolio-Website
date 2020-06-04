@@ -1,0 +1,184 @@
+body{
+    font-family: sans-serif;
+}
+/*navbar animation*/
+.logo{
+    margin-left: 15px;
+}
+.logo span{
+    margin: 0 auto;
+    color: white;
+    line-height: 50px;
+    letter-spacing: 5px;
+    animation: light 3s infinite;
+    font-weight: bold;
+}
+nav{
+    display: flex;
+    left:25%;
+    position: fixed;
+    margin-top: 20px;
+    width: 960px;
+    height: 50px;
+    background: #34395e;
+    border-radius: 8px;
+    box-shadow: 0px 2px 3px 0 rgba(0,0,0,.1);
+}
+.menu a{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    left: 19%;
+}
+.menu .satu{
+    animation: light 4s infinite;
+    animation-delay: 0.1s;
+}
+.menu .dua{
+    animation: light 4s infinite;
+    animation-delay: 0.3s;
+}
+.menu .tiga{
+    animation: light 4s infinite;
+    animation-delay: 0.5s;
+}
+.menu .empat{
+    animation: light 4s infinite;
+    animation-delay: .7s;
+}
+.menu .lima{
+    animation: light 4s infinite;
+    animation-delay: .9s;
+}
+nav .animation{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    background: #12947f;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+a:nth-child(1){
+    width: 100px;
+}
+nav .start-home, a:nth-child(1):hover ~ .animation{
+    width: 90px;
+    left: 365px;
+}
+a:nth-child(2){
+    width: 110px;
+}
+nav .start-about, a:nth-child(2):hover ~ .animation{
+    width: 110px;
+    left: 465px;
+}
+a:nth-child(3){
+    width: 100px;
+}
+nav .start-blog, a:nth-child(3):hover ~ .animation{
+    width: 100px;
+    left: 575px;
+}
+a:nth-child(4){
+    width: 160px;
+}
+nav .start-profile, a:nth-child(4):hover ~ .animation{
+    width: 160px;
+    left: 670px;
+}
+a:nth-child(5){
+    width: 120px;
+}
+nav .start-contact, a:nth-child(5):hover ~ .animation{
+    width: 125px;
+    left: 835px;
+}
+@keyframes light {
+    0%,20%{
+        color: #f0a00b;
+        text-shadow: 0 0 10px #ffa600;
+    }
+    40%{
+        color: #40f00b;
+        text-shadow: 0 0 10px #3cff00;
+    }
+    60%{
+        color: #0b94f0;
+        text-shadow: 0 0 10px #0099ff;
+    }
+    80%{
+        color: #f00b89;
+        text-shadow: 0 0 10px #ff008c;
+    }
+    100%{
+        color: #38ffa2;
+        text-shadow: 0 0 10px #38ffa2;
+    }
+}
+span:nth-child(1){
+    animation-delay: .2s;
+}
+span:nth-child(2){
+    animation-delay: .4s;
+}
+span:nth-child(3){
+    animation-delay: .6s;
+}
+span:nth-child(4){
+    animation-delay: .8s;
+}
+span:nth-child(5){
+    animation-delay: 1s;
+}
+span:nth-child(6){
+    animation-delay: 1.2s;
+}
+span:nth-child(7){
+    animation-delay: 1.4s;
+}
+span:nth-child(8){
+    animation-delay: 1.6s;
+}
+span:nth-child(9){
+    animation-delay: 1.8s;
+}
+span:nth-child(10){
+    animation-delay: 2s;
+}
+span:nth-child(11){
+    animation-delay: 2.2s;
+}
+span:nth-child(12){
+    animation-delay: 2.4s;
+}
+/*main page animation*/
+.transition-fade{
+    opacity: 1;
+    transition: 500ms;
+    transform: translateX(0);
+}
+html.is-animating .transition-fade{
+    opacity: 1;
+    transform: translateY(150px);
+}
+html.is-leaving .transition-fade{
+    opacity: 0;     
+}
+
+
+.transition-swipe{
+    transition: 500ms;
+    transform: translateY(0);  
+}
+html.is-animating .transition-swipe{
+    transform: translateY(-150px);
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

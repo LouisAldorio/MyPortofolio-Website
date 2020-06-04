@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Navbar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    
+<main id="swup" class="home">
+    <div class="container transition-swipe">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-brand logo" href="#">
+                <span>L</span>
+                <span>O</span>
+                <span>U</span>
+                <span>I</span>
+                <span>S</span>
+                <span>A</span>
+                <span>L</span>
+                <span>D</span>
+                <span>O</span>
+                <span>R</span>
+                <span>I</span>
+                <span>O</span>
+            </div>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav">
+                <li class="nav-item menu">
+                  <a class="nav-link satu" href="/">Home </a>
+                </li>
+                <li class="nav-item menu">
+                  <a class="nav-link dua" href="/about">About</a>
+                </li>
+                
+                <li class="nav-item menu">
+                    <a class="nav-link empat" href="/profile">Profile</a>
+                  </li>
+                  <li class="nav-item menu">
+                    <a class="nav-link lima" href="/contact">Contact</a>
+                  </li>
+                
+                <div class="animation start-about"></div>
+                
+              </ul>
+            </div>
+          </nav>
+    </div>
+    <div class="container">       
+        <div class="kotak2">
+            <h1 class="mb-5 transition-swipe">About Me</h1>
+            <div class="row transition-left">             
+                <div class="col-lg-8 text-left tanda">
+                    Hello , my name is Louis Aldorio, I have lots of passion in web application developement. I have lost of skills, mostly is front-end web. But, currently I am learning
+                    about back-end. My goal is becoming a full stack developer. I am a quick learner, I come from the family that do not skilled in Computation and technology. So, I realize
+                    that , I have no body to ask in my family. Therefore, I have to keep going by my self , no matter what happens.
+                </div>
+                <div class="col-lg-4 ">
+                    <img src="/static/img/profileelearning.jpg" alt="" class="img-thumbnails rounded-circle w-50">
+                </div>
+            </div>
+            <div class="row transition-right mt-5">
+                <div class="col-lg-4">
+                    <img src="/static/img/computer.png" alt="" class="img-thumbnails w-50 rounded-circle">
+                </div>
+                <div class="col-lg-8 text-right tanda">
+                    I am skilled at HTML, CSS , Javascript,jQuery for the front-end. Currently , I am a colleage student at STMIK Mikroskil the 4th semester. I am going to finish my education
+                    in 2022. I hope I could finish my degree as Cum Laude. I am also quite skilled at C#.NET and many more back-end languages. This website I build by using express JS which 
+                    is a framework of Node JS. I also use some npm packages in the process such as nodemon and swup for the smooth page transition.
+                </div>
+            </div>
+        </div> 
+        <div class="transition-swipe">
+            <div class="row">
+                <div class="col-12">
+                    <h5 class="footer">Copyright &copy; 2020 | Designed by Louis Aldorio</h5>
+                </div>
+            </div>
+        </div>         
+    </div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="/static/node_modules/swup/dist/swup.min.js"></script>
+<script src="/static/swup.js"></script>
+</body>
+</html>
